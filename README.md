@@ -77,6 +77,7 @@ Some examples:
 ```
 $ phantomjs --disk-cache=no angular-seo-server.js 8888 http://localhost:8000/myapp
 $ phantomjs --disk-cache=no angular-seo-server.js 8888 file:///path/to/index.html
+$ phantomjs --disk-cache=no angular-seo-server.js 8888 http://127.0.0.1:9000/
 ```
 
 
@@ -96,6 +97,7 @@ Press Ctrl+C to stop.
 Then try with cURL:
 ```
 $ curl 'http://localhost:8888/?_escaped_fragment_=/route'
+$ curl 'http://localhost:8888/?_escaped_fragment_=/components/list/Forms'
 ```
 
 You should then have a complete, rendered HTML output.
